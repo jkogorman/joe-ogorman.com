@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joe O'Gorman</title>
+  <meta name="description" content="Joe O'Gorman — personal site">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Joe O'Gorman</h1>
+      <p class="tagline">Short one-line description goes here.</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          A couple of sentences about who you are, what you do, and what
+          you're interested in. Replace this placeholder text with your
+          own bio.
+        </p>
+      </section>
+
+      <section id="work">
+        <h2>Work</h2>
+        <ul class="project-list">
+          <li>
+            <h3>Project one</h3>
+            <p>Short description of the project and your role in it.</p>
+            <a href="#">View project &rarr;</a>
+          </li>
+          <li>
+            <h3>Project two</h3>
+            <p>Short description of the project and your role in it.</p>
+            <a href="#">View project &rarr;</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:joe_ogorman@berkeley.edu">joe_ogorman@berkeley.edu</a>
+        </p>
+        <p class="social">
+          <a href="#">GitHub</a> &middot;
+          <a href="#">LinkedIn</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Joe O'Gorman</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
