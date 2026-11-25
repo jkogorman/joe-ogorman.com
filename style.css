@@ -121,9 +121,52 @@ a {
 
 /* History row */
 .history {
-  flex: 1;
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Portfolio row */
+.portfolio {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project {
+  padding: 32px 28px var(--pad);
+  border-right: 1px solid var(--line);
+}
+
+.project:last-child {
+  border-right: none;
+}
+
+.project h3 {
+  margin-top: 18px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.project .desc {
+  margin-top: 10px;
+  max-width: 34em;
+}
+
+.tags {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .history-label {
@@ -240,14 +283,27 @@ a {
   }
 
   .top,
-  .history {
+  .history,
+  .portfolio,
+  .projects {
     grid-template-columns: 1fr;
   }
 
   .profile,
   .history-label,
-  .column {
+  .column,
+  .project {
     border-right: none;
+  }
+
+  .project {
+    padding-left: var(--pad);
+    padding-right: var(--pad);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project:last-child {
+    border-bottom: none;
   }
 
   .profile {
